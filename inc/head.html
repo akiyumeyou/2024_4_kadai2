@@ -1,0 +1,20 @@
+<header>
+    ポチっとつながるPOTZ会員ページ
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="index.php">最初のページ</a>
+        <a class="navbar-brand" href="output.php">マイページ</a>
+        <a class="navbar-brand" href="event_new.php">交流会作成</a>
+        <a class="navbar-brand" href="mousikomi.php">交流会申込</a>
+        <a class="navbar-brand" href="kanri.php">管理者画面</a>
+        <a class="navbar-brand" href="logout.php">ログアウト</a>
+        </div>
+    </div>
+    <?php 
+    // ログインしている場合、ユーザー名を表示
+    if(isset($_SESSION["user_name"])) {
+        echo $_SESSION["user_name"] . "さん";
+    }
+    ?>
+
+</header>
